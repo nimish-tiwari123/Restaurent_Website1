@@ -1,0 +1,816 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PATO Restaurant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- This is first Section -->
+  <header>
+
+    <nav class="navbar fixed-top" id="nav1">
+      <div class="container-fluid pt-3">
+        <a class="navbar-brand" href="#"><img src="home/logo.jpg" alt="" id="brand"></a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-none d-lg-flex justify-content-around flex-row ">
+          <li class="nav-item">
+            <a class="nav-link active text-light ncolor" aria-current="page" id="navM1" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Menu.html" id="navM2">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Reservation.html" id="navM3">RESERVATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Gallery.html" id="navM4">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="About.html" id="navM5">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Blog.html" id="navM6">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Contact.html" id="navM7">CONTACT</a>
+          </li>
+
+
+        </ul>
+        <div class="icon text-light">
+          <i class="fa-brands fa-facebook-f ms-4" id="facebook"></i>
+          <i class="fa-brands fa-twitter ms-3" id="twitter"></i>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon text-bg-light"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body text-center">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Gallery.html">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="About.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Contact.html">CONTACT</a>
+              </li>
+
+
+            </ul>
+            <button class="btn btn-dark mt-4">
+              <a href="Reservation.html" class="text-decoration-none text-white">RESERVATION</a></button>
+
+            <h6 class="mt-4">GALLERY</h6>
+            <div class="container">
+              <div class="row gx-1">
+                <div class="col">
+
+                  <img src="gallery/gone.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gfour.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gseven.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+
+                  <img src="gallery/gtwo.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gfive.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/geight.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+
+                  <img src="gallery/gthree.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gsix.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gnine.jpg" alt="" width="90px" class="gimg">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide mywidth" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+          class="active rounded-circle indicator" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          class=" rounded-circle indicator" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          class=" rounded-circle indicator" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="home/first.jpg" class="d-block " alt="...">
+          <div class="carousel-caption  ">
+            <h2 id="top-down">Welcome to</h2>
+
+            <h1 id="bottom-up">PATO PLACE</h1>
+            <button class="btn btn-light text-danger commonbutton" id="zoom">LOOK MENU</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="home/second.jpg" class="d-block " alt="...">
+          <div class="carousel-caption">
+            <h2 id="left-right">Welcome to</h2>
+            <h1 id="right-left">PATO PLACE</h1>
+            <button class="btn btn-light text-danger commonbutton effect" id="zoom">LOOK MENU</button>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <img src="home/thired.jpg" class="d-block " alt="...">
+          <div class="carousel-caption">
+            <h2 id="rotate1">Welcome to</h2>
+            <h1 id="rotate2">PATO PLACE</h1>
+            <button class="btn btn-light text-danger commonbutton" id="rotate3">LOOK MENU</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+   <!-- This is second Section -->
+  <div class="ourstory container-fluid  ">
+    <div class="container text-center ">
+      <div class="row pt-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+          <h1 class="coumnh1">Italian Restaurant</h1>
+          <h1 class="coumn2">WELCOME</h1>
+          <p class="text-center text-secondary mt-5">Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est.
+            Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.</p>
+          <button class="btn commonbtn text-secondary">OUR STORY <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 pt-5 m-auto">
+          <img src="home/ourstory.jpg" alt="" width="400" class="img-fluid rounded-3">
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- This is thired Section -->
+  <div class="discover">
+    <div class=" discoverback d-flex flex-column justify-content-center text-center">
+      <h1 class="coumnh1">Discover</h1>
+      <h1 class="coumn2 text-light">PATO PLACE</h1>
+    </div>
+    <div class="discoverCard ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="home/card1.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body p-0 pt-4">
+                <h5 class="card-title">ROMANTIC RESTAURANT</h5>
+                <p class="card-text">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                <button class="btn commonbtn text-secondary p-0">LEARN MORE<i
+                    class="fa-solid fa-arrow-right"></i></button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="home/card2.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body p-0 pt-4">
+                <h5 class="card-title">DELICIOUS FOOD</h5>
+                <p class="card-text">Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna</p>
+                <button class="btn commonbtn text-secondary p-0">LEARN MORE<i
+                    class="fa-solid fa-arrow-right"></i></button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="home/card3.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body p-0 pt-4">
+                <h5 class="card-title">RED WINES YOU LOVE</h5>
+                <p class="card-text">Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                <button class="btn commonbtn text-secondary p-0">LEARN MORE<i
+                    class="fa-solid fa-arrow-right"></i></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- This is fourth Section -->
+  <div class="discoverMenu text-center">
+    <h1 class="coumnh1 mt-2">Discover</h1>
+    <h1 class="coumn2">OUR MENU</h1>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 col-sm-12  position-relative">
+          <button
+            class="btn btn-light px-4 py-2 fs-3 disbtn position-absolute top-50 start-50 translate-middle">LUNCH</button>
+          <img src="home/dis1.jpg" alt="" class="imgone rounded-4">
+
+        </div>
+        <div class="col-md-4 col-sm-12 position-relative">
+          <button
+            class="btn btn-light px-4 py-2 fs-3 disbtn position-absolute top-50 start-50 translate-middle">DINNER</button>
+          <img src="home/dis2.jpg" alt="" class="imgtwo rounded-4">
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="row ">
+            <div class="col position-relative">
+              <button
+                class="btn btn-light px-4 py-2 fs-3  disbtn  position-absolute top-50 start-50 translate-middle">DRINK</button>
+              <img src="home/dis4.jpg" alt="" class="imgthree rounded-4">
+            </div>
+
+          </div>
+          <div class="row mt-md-2 mt-lg-4">
+            <div class="col position-relative">
+              <button
+                class="btn btn-light px-4 py-2 fs-3 disbtn position-absolute top-50 start-50 translate-middle">STARTERS</button>
+              <img src="home/dis5.jpg" alt="" class="imgfour rounded-4">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row mt-md-2 mt-lg-4 ">
+        <div class="col-md-8 col-sm-12 position-relative">
+          <button
+            class="btn btn-light px-4 py-2 fs-3 disbtn position-absolute top-50 start-50 translate-middle w-50">HAPPY
+            HOUR</button>
+          <img src="home/dis3.jpg" alt="" class="imgfive rounded-4">
+        </div>
+        <div class="col-md-4 col-sm-12 position-relative">
+          <button
+            class="btn btn-light px-4 py-2 fs-3 disbtn position-absolute top-50 start-50 translate-middle">DESSERT</button>
+          <img src="home/dis6.jpg" alt="" class="imgsix rounded-4">
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- This is fifth Section -->
+  <div class="events">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+          class="active rounded-circle indicator" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+          class="rounded-circle indicator"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+          class="rounded-circle indicator"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item  citem active">
+          <img src="home/bgevent1.jpg" class="d-block w-100 h-100" alt="..." class="bgevent">
+          <div class="carousel-caption h-100">
+            <h1 class="coumnh1 mt-5">Upcomming</h1>
+            <h1 class="coumn2 mb-5">EVENTS</h1>
+            <div class="card ccard mb-5 m-auto  " style="max-width: 1100px;">
+              <div class="row g-0">
+                <div class="col-lg-6 col-md-12">
+                  <p class="information rounded p-2">
+                    08:00 PM Tuesday - 21 November 2018
+                  </p>
+                  <img src="home/event1.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="card-body mt-lg-5 mt-md-3 mx-3">
+                    <h5 class="card-title fs-4">WINES DURING SPESIFIC NIGHT</h5>
+                    <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corporis vitae recusandae unde? A voluptate rem illum voluptatum omnis.</p>
+
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-md-3">
+                          <h2 class="num">25</h2>
+                          <p class="text-secondary">DAYS</p>
+                        </div>
+                        <div class=" col-lg-3 col-sm-6 col-md-3">
+                          <h2 class="num">12</h2>
+                          <p class="text-secondary">HOURS</p>
+                        </div>
+                        <div class=" col-lg-3 col-md-3">
+                          <h2 class="num">48</h2>
+                          <p class="text-secondary">MINUTES</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                          <h2 class="num">12</h2>
+                          <p class="text-secondary">SECONDS</p>
+                        </div>
+                        <button class="btn commonbtn text-secondary p-0 mt-2 ">VIEW DETAILS<i
+                            class="fa-solid fa-arrow-right ms-2"></i></button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item  citem">
+          <img src="home/bgevent2.jpg" class="d-block w-100 h-100" alt="..." class="bgevent">
+          <div class="carousel-caption h-100">
+            <h1 class="coumnh1 mt-5">Upcomming</h1>
+            <h1 class="coumn2 mb-5">EVENTS</h1>
+            <div class="card ccard mb-5 m-auto  " style="max-width: 1100px;">
+              <div class="row g-0">
+                <div class="col-lg-6 col-md-12">
+                  <p class="information rounded p-2">
+                    08:00 PM Tuesday - 21 November 2018
+                  </p>
+                  <img src="home/event2.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="card-body mt-lg-5 mt-md-3 mx-3">
+                    <h5 class="card-title fs-4">WINES DURING SPESIFIC NIGHT</h5>
+                    <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corporis vitae recusandae unde? A voluptate rem illum voluptatum omnis.</p>
+
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-md-3">
+                          <h2 class="num">25</h2>
+                          <p class="text-secondary">DAYS</p>
+                        </div>
+                        <div class=" col-lg-3 col-sm-6 col-md-3">
+                          <h2 class="num">12</h2>
+                          <p class="text-secondary">HOURS</p>
+                        </div>
+                        <div class=" col-lg-3 col-md-3">
+                          <h2 class="num">48</h2>
+                          <p class="text-secondary">MINUTES</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                          <h2 class="num">12</h2>
+                          <p class="text-secondary">SECONDS</p>
+                        </div>
+                        <button class="btn commonbtn text-secondary p-0 mt-2 ">VIEW DETAILS<i
+                            class="fa-solid fa-arrow-right ms-2"></i></button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item  citem ">
+          <img src="home/bgevent3.jpg" class="d-block w-100 h-100" alt="..." class="bgevent">
+          <div class="carousel-caption h-100">
+            <h1 class="coumnh1 mt-5">Upcomming</h1>
+            <h1 class="coumn2 mb-5">EVENTS</h1>
+            <div class="card ccard mb-5 m-auto  " style="max-width: 1100px;">
+              <div class="row g-0">
+                <div class="col-lg-6 col-md-12">
+                  <p class="information rounded p-2">
+                    08:00 PM Tuesday - 21 November 2018
+                  </p>
+                  <img src="home/event3.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <div class="card-body mt-lg-5 mt-md-3 mx-3">
+                    <h5 class="card-title fs-4">WINES DURING SPESIFIC NIGHT</h5>
+                    <p class="card-text text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Corporis vitae recusandae unde? A voluptate rem illum voluptatum omnis.</p>
+
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-md-3">
+                          <h2 class="num">25</h2>
+                          <p class="text-secondary">DAYS</p>
+                        </div>
+                        <div class=" col-lg-3 col-sm-6 col-md-3">
+                          <h2 class="num">12</h2>
+                          <p class="text-secondary">HOURS</p>
+                        </div>
+                        <div class=" col-lg-3 col-md-3">
+                          <h2 class="num">48</h2>
+                          <p class="text-secondary">MINUTES</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                          <h2 class="num">12</h2>
+                          <p class="text-secondary">SECONDS</p>
+                        </div>
+                        <button class="btn commonbtn text-secondary p-0 mt-2 ">VIEW DETAILS<i
+                            class="fa-solid fa-arrow-right ms-2"></i></button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+   <!-- This is sixth Section -->
+  <div class="reservation container-fluid h-100 pb-5">
+    <div class="container text-center ">
+      <div class="row pt-5">
+        <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
+          <h1 class="coumnh1 mt-5">Reservation</h1>
+          <h1 class="coumn2 fs-1">BOOK TABLE</h1>
+
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputdate" class="form-label float-start">Date</label>
+              <input type="date" class="form-control p-2 " id="inputdate">
+            </div>
+            <div class="col-md-6">
+              <label for="inputname" class="form-label float-start">Name</label>
+              <input type="text" class="form-control p-2" id="inputname" placeholder="Name">
+            </div>
+            <div class="col-md-6">
+              <label for="inputtime" class="form-label float-start">Time</label>
+              <input type="time" class="form-control p-2" id="inputtime">
+            </div>
+
+            <div class="col-md-6">
+              <label for="inputtel" class="form-label float-start">Phone</label>
+              <input type="tel" class="form-control p-2" id="inputtel">
+            </div>
+            <div class="col-md-6">
+              <label for="select" class="form-label float-start ">People</label>
+              <select class="form-select p-2" aria-label="Default select example" id="select">
+
+                <option value="1" selected>1 Person</option>
+                <option value="2">2 Person</option>
+                <option value="3">3 Person</option>
+                <option value="4">4 Person</option>
+                <option value="5">5 Person</option>
+                <option value="6">6 Person</option>
+                <option value="7">7 Person</option>
+                <option value="8">8 Person</option>
+                <option value="9">9 Person</option>
+                <option value="10">10 Person</option>
+                <option value="11">11 Person</option>
+                <option value="12">12 Person</option>
+
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label float-start">Email</label>
+              <input type="email" class="form-control p-2" id="inputEmail4" placeholder="Email">
+            </div>
+
+
+
+          </form>
+
+
+          <button class="btn book text-secondary bg-dark text-light py-2 px-4 mt-5">BOOK TABLE</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 pt-5 m-auto">
+          <img src="home/reservation.jpg" alt="" width="400" class="img-fluid rounded-3">
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- This is seven Section -->
+  <div class="review text-center">
+    <h1 class="coumnh1 mt-5">Customers Say</h1>
+    <h1 class="coumn2 fs-1">REVIEW</h1>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" aria-current="true"
+          aria-label="Slide 1" class="active rounded-circle indicator"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"
+          class=" rounded-circle indicator"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"
+          class=" rounded-circle indicator"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="img-content d-flex flex-column justify-content-center align-items-center">
+            <img src="home/chef1.jpg" class="d-inline-block rounded-circle" alt="..." width="120">
+            <div class="reviewcontent">
+              <p class="p-review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam similique voluptatem amet non placeat
+                eum, quam soluta adipisci.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+              </div>
+              <p class="NAME mt-4">
+                Maree Saemaon-Newyork
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <div class="img-content d-flex flex-column justify-content-center align-items-center">
+            <img src="home/chef2.jpg" class="d-inline-block rounded-circle" alt="..." width="120">
+            <div class="reviewcontent">
+              <p class="p-review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam similique voluptatem amet non placeat
+                eum, quam soluta adipisci.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+              </div>
+              <p class="NAME mt-4">
+                Maree Saemaon-Newyork
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img-content d-flex flex-column justify-content-center align-items-center">
+            <img src="home/chef3.jpg" class="d-inline-block rounded-circle" alt="..." width="120">
+            <div class="reviewcontent ">
+              <p class="p-review">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam similique voluptatem amet non placeat
+                eum, quam soluta adipisci.
+              </p>
+              <div class="star">
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+                <i class="fa-solid fa-star text-danger"></i>
+              </div>
+              <p class="NAME mt-4">
+                Maree Saemaon-Newyork
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+   <!-- This is eight Section -->
+  <div class="vid-review">
+    <div class="vid text-center">
+      <h1 class="coumnh1 mt-5">Discover</h1>
+      <h1 class="coumn2 text-light">OUR VIDEO</h1>
+
+      <a href="vedio.html" target="_self"> <i class="fa-solid fa-play bg-light  rounded-circle text-dark mt-4"></i></a>
+    </div>
+  </div>
+   <!-- This is nine Section -->
+  <div class="blog container-fluid">
+    <div class="head-blog text-center">
+      <h1 class="coumnh1 mt-5">Latest News</h1>
+      <h1 class="coumn2 fs-1">THE BLOG</h1>
+    </div>
+    <div class="discoverCard pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="home/blog1.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body p-0 pt-4">
+                <h5 class="card-title">BEST PLACES FOR WINE</h5>
+                <p class="card-text">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                <button class="btn commonbtn text-secondary p-0">CONTINUE READING<i
+                    class="fa-solid fa-arrow-right"></i></button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="home/blog2.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body p-0 pt-4">
+                <h5 class="card-title">EGGS AND CHESEE</h5>
+                <p class="card-text">Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna</p>
+                <button class="btn commonbtn text-secondary p-0">CONTINUE READING<i
+                    class="fa-solid fa-arrow-right"></i></button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 col-md-4">
+            <div class="card">
+              <img src="home/blog3.jpg" class="card-img-top rounded-4" alt="...">
+              <div class="card-body p-0 pt-4">
+                <h5 class="card-title">STYLE THE WEDDING PARTY</h5>
+                <p class="card-text">Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                <button class="btn commonbtn text-secondary p-0">CONTINUE READING<i
+                    class="fa-solid fa-arrow-right"></i></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- This is ten Section -->
+  <div class="newsletter container-fluid p-5">
+
+    <form class="row p-lg-5">
+      <div class="col-md-4 col-sm-12 text-center">
+        <span class="fs-3 px-lg-3">SPECIALS SIGN UP</span>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <label for="inputemail2 ">
+          <input type="email" class="form-control" id="inputemail2" placeholder="Email Address">
+
+        </label>
+      </div>
+      <div class="col-md-4 col-sm-12 text-center">
+        <button type="submit" class="btn btn-dark px-lg-5 mb-3">SIGN-UP</button>
+      </div>
+    </form>
+
+  </div>
+
+   <!-- This is eleven Section -->
+  <footer>
+    <div class="container-fluid bg-dark foot p-5">
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="contact">
+              <h4 class="text-white mb-3 ">CONTACT US</h4>
+              <p><i class="fa-solid fa-location-dot"></i> 8th floor, 379 Hudson St, New York, NY 10018</p>
+              <p><i class="fa-solid fa-phone"></i> (+1) 96 716 6879</p>
+              <p><i class="fa-solid fa-envelope"></i> contact@site.com</p>
+            </div>
+            <div class="opening-times">
+              <h4 class="text-white mt-5 mb-3 ">OPENING TIMES</h4>
+              <p>09:30 AM – 11:00 PM</p>
+              <p>Every Day</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <h4 class="text-white mb-3 ">LATEST TWITTER</h4>
+            <i class="fa-brands fa-twitter text-light"></i><span class="text-danger"> @Nimish</span>
+            <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.
+              <span class="text-danger">https://www.patoresto.com</span>
+            </p>
+            <br>
+            <i class="fa-brands fa-twitter text-light"></i><span class="text-danger"> @Nimish</span>
+            <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.
+              <span class="text-danger">https://www.patoresto.com</span>
+            </p>
+
+          </div>
+          <div class="col-lg-4 col-md-8 col-sm-12">
+            <h4 class="text-white mb-5 ms-2">GALLERY</h4>
+            <div class="container mb-5">
+              <div class="row gx-1">
+                <div class="col">
+
+                  <img src="gallery/gone.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gfour.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gseven.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gsix.jpg" alt="" width="90px" class="gimg">
+                </div>
+
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+                  <img src="gallery/gfour.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gtwo.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gfive.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/geight.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+
+                  <img src="gallery/gthree.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gsix.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gnine.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+                  <img src="gallery/gseven.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="color.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,807 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Cedarville+Cursive&family=Courgette&family=DM+Serif+Display&family=Merriweather:ital,wght@0,700;1,400&family=Montserrat:wght@500;600;700&family=Mukta:wght@700&family=Poppins&family=Roboto:wght@500&family=Rubik:wght@500&display=swap');
+
+/* This for HOME page */
+.bgColor {
+  background-color: rgb(247, 246, 246);
+  box-shadow: 1px 1px 10px rgb(134, 133, 133);
+}
+.redbrand {
+  background-color: rgb(200, 16, 16);
+  border-radius: 10%;
+}
+.blacknav {
+  color: black !important;
+}
+.blackicon {
+  color: black;
+}
+.mywidth {
+  width: 100vw;
+}
+.mywidth img {
+  width: 100vw;
+  object-fit: cover;
+  object-position: 50% 100%;
+  height: 720px;
+}
+.commonbutton:hover {
+  background-color: rgb(216, 26, 26);
+  color: white !important;
+  border: none;
+  transition: 0.5s;
+}
+.mywidth .carousel-caption {
+  margin-bottom: 200px;
+}
+.mywidth .carousel-caption button {
+  font-size: 12px;
+  width: 120px;
+}
+.mywidth h2 {
+  font-family: 'Courgette', cursive;
+  font-size: 60px;
+}
+.mywidth h1,
+.h1common {
+  font-size: 90px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+.navbar .container-fluid {
+  padding: 0 0 2vh 10vw;
+}
+ul {
+  width: 55vw;
+
+}
+.icon {
+  width: 20vw;
+}
+.nav-link {
+  font-size: 15px;
+}
+.nav-link:hover,
+.icon i:hover {
+  color: rgb(216, 26, 26) !important;
+  transition: 0.5s;
+}
+
+.offcanvas-body ul {
+
+  width: 370px;
+}
+.offcanvas-body button:hover,
+.book:hover {
+  color: white !important;
+  background-color: rgb(216, 26, 26) !important;
+  border: none;
+  transition: 0.5s;
+}
+#offcanvasRight {
+  transition: 1s;
+}
+.indicator {
+  width: 10px !important;
+  height: 10px !important;
+}
+.ourstory,
+.reservation {
+  width: 100vw;
+  height: 85vh;
+  background-color: rgb(235, 235, 235);
+}
+.discover {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("home/back1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.discoverback {
+  width: 100vw;
+  height: 50vh;
+}
+.discover .discoverCard {
+  width: 100vw;
+  height: 75vh;
+  background-color: white;
+  position: absolute;
+
+}
+.coumnh1 {
+  font-size: 30px;
+  font-family: 'Courgette', cursive;
+  ;
+  color: #d61c22;
+}
+.coumn2 {
+
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 6px;
+}
+.commonbtn {
+  font-size: 14px;
+}
+.commonbtn:hover {
+  color: #d61c22 !important;
+  transition: 0.5s;
+}
+.card {
+  border: none;
+  margin-top: 10vh;
+
+}
+.col .card h5 {
+  letter-spacing: 3px;
+}
+.col .card h5:hover {
+  color: #d61c22;
+}
+.imgone,
+.imgfour,
+.imgthree,
+.imgtwo,
+.imgsix {
+  width: 25vw;
+}
+.imgfive {
+  width: 52vw;
+}
+.disbtn {
+  letter-spacing: 5px;
+}
+.disbtn:hover {
+  background-color: #d61c22bb;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+.discoverMenu {
+  padding: 40vh 20vh;
+  width: 100vw;
+  height: 200vh;
+  background-image: url("home/discoverback.jpg");
+
+  background-size: cover;
+}
+.events {
+  width: 100vw;
+}
+.events .information {
+  background-color: #d61c22e2;
+  color: white;
+  writing-mode: vertical-rl;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  margin-left: 0px;
+}
+.events .num {
+  color: #fa343b;
+  font-size: 45px;
+  font-weight: 800;
+}
+.review {
+  height: 80vh;
+}
+.reserve {
+  height: 80vh;
+}
+.review img {
+  border: 5px solid rgb(216, 4, 4);
+}
+.reviewcontent {
+  height: 60vh;
+}
+.reviewcontent p {
+  font-size: 18px;
+  color: rgb(164, 161, 161);
+}
+.review .img-content {
+  margin-top: 10vh;
+}
+.review .carousel {
+  height: 60vh;
+}
+.vid-review {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("home/videobackground.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+
+}
+.vid {
+  padding-top: 22vh;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.517);
+}
+.vid a i {
+  width: 80px;
+  height: 80px;
+  font-size: 20px;
+  padding-top: 30px;
+  transition: 1s;
+}
+.vid a i:hover {
+  width: 90px;
+  height: 90px;
+
+  font-size: 22px;
+  padding-top: 35px;
+  background-color: #d61c227d !important;
+  color: white !important;
+}
+.newsletter {
+  width: 100vw;
+  background-color: rgb(235, 235, 235);
+
+}
+.newsletter span {
+  letter-spacing: 5px;
+}
+.newsletter #inputemail2 {
+  padding: 8px;
+  width: 30vw;
+  border: 2px solid rgb(213, 213, 213);
+}
+.foot {
+  width: 100vw;
+}
+.foot p {
+  color: grey;
+}
+
+.hero{
+  width: 100vw;
+  height: 75vh;
+  background-image: url(Menu/hero.jpg);
+}
+.heroh1{
+  font-size: 50px;
+ letter-spacing: 5px;
+ padding-top: 35vh;
+}
+.menu-card{
+  width: 100vw;
+  background-color: rgb(235, 235, 235);
+}
+.h3{
+  letter-spacing: 2px;
+  color: rgb(46, 46, 46);
+}
+.myhover{
+  transition: 1s;
+  color: rgb(107, 106, 106);
+  letter-spacing: 2px;
+}
+.myhover:hover{
+  color: #d61c22 !important;
+}
+.p1{
+ 
+  word-wrap: break-word;
+}
+.p2{
+  margin-top: -15px;
+  color: grey;
+}
+.lunch{
+  width: 100vw;
+  height: 160vh;
+  background-image: url(Menu/lunch.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.dinner{
+  width: 100vw;
+  height: 160vh;
+  background-image: url(Menu/dinner.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.Lunch-header, .dinner-header{
+  background-color: rgba(0, 0, 0, 0.425);
+  height: 60vh;
+}
+.lunchh1{
+  font-size: 50px;
+  letter-spacing: 5px;
+  padding-top: 25vh;
+}
+
+.price{
+  color: rgb(85, 84, 84);
+}
+.reservationhero{
+  width: 100vw;
+  height: 75vh;
+  background-image: url(reservation/reservationback.jpg);
+  background-repeat: no-repeat;
+}
+.abouthero{
+  width: 100vw;
+  height: 68vh;
+  background-image: url(about/Abouthero.html);
+  background-repeat: no-repeat;
+}
+.gallery{
+  width: 100vw;
+}
+.gbtn{
+  letter-spacing: 2px;
+  transition: 1s;
+}
+.gbtn:hover{
+  background-color: rgb(22, 22, 22) !important;
+  color: white !important;
+}
+.story{
+ 
+  background-color: rgba(233, 230, 225, 0.784);
+}
+iframe{
+  width:90vw;
+}
+@media only screen and (max-width: 1400px) {
+  .mywidth h1,
+  .h1common {
+    font-size: 60px;
+    
+  }
+  .imgone,
+  .imgfour,
+  .imgthree,
+  .imgtwo,
+  .imgsix {
+    width: 22vw;
+  }
+
+  .imgfive {
+    width: 45vw;
+  }
+
+  .discoverMenu {
+
+    height: 140vh;
+
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .ourstory {
+
+    height: 120vh;
+
+  }
+
+  .imgone,
+  .imgfour,
+  .imgthree,
+  .imgtwo,
+  .imgsix {
+    width: 22vw;
+  }
+
+  .imgfive {
+    width: 45vw;
+  }
+
+  .disbtn {
+
+    letter-spacing: 2px;
+    font-size: 15px !important;
+
+  }
+
+  .discoverMenu {
+
+    height: 150vh;
+
+  }
+
+  .citem {
+    height: 180vh;
+  }
+
+  .events .information {
+
+    background-color: #d61c22e2;
+    color: white;
+    writing-mode: horizontal-tb;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 7%;
+
+    margin-left: 0px;
+
+  }
+
+  .newsletter #inputemail2 {
+
+    width: 30vw;
+
+  }
+
+  .review {
+    height: 110vh;
+  }
+
+  .review .carousel {
+    height: 80vh;
+  }
+  .lunch,.dinner{
+   
+    height: 215vh;
+   
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+  
+  
+  .mywidth h2 {
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+  }
+
+  .mywidth h1,
+  .h1common {
+    margin-top: 10vh;
+   
+  }
+
+  header nav ul {
+    display: none !important;
+  }
+
+  header nav .offcanvas-body ul {
+    display: block !important;
+  }
+
+  .icon {
+    width: 35vw;
+  }
+
+  .navbar .container-fluid {
+    padding: 0 0 0 5vw;
+  }
+
+  .ourstory img {
+    width: 250px !important;
+  }
+
+  .discover {
+    height: 300vh;
+  }
+
+  .discoverMenu {
+
+    padding: 10vh 0 0 0;
+
+    height: 400vh;
+
+  }
+
+  .imgone,
+  .imgtwo,
+  .imgthree,
+  .imgfour,
+  .imgfive,
+  .imgsix {
+    width: 90vw;
+    margin-top: 30px;
+  }
+
+  .imgfour,
+  .imgfive,
+  .imgsix {
+    margin-top: 10px;
+  }
+
+  .imgsix {
+    margin-top: 30px;
+  }
+
+  .ourstory {
+
+    height: 150vh;
+
+  }
+
+  .navbar-brand img {
+    width: 25vw;
+  }
+
+  .icon {
+    width: 50vw;
+  }
+
+  .disbtn {
+
+    letter-spacing: 2px;
+    font-size: 15px !important;
+
+  }
+
+  .events {
+    height: 150vh;
+    margin-top: 0;
+  }
+
+  .events .information {
+    display: none;
+  }
+
+  .events .num {
+
+    font-size: 30px;
+
+  }
+
+  .citem {
+    margin-top: 0;
+  }
+
+  .citem .card-text {
+    display: none;
+  }
+
+  .discover .discoverCard {
+
+    width: 100vw;
+    height: 250vh;
+    background-color: white;
+    position: absolute;
+
+  }
+
+  .newsletter #inputemail2 {
+
+    width: 75vw;
+    margin-bottom: 20px;
+  }
+
+  .gimg {
+    width: 73px;
+
+  }
+
+  .review {
+    height: 100vh;
+  }
+
+  .review .carousel {
+    height: 80vh;
+  }
+
+  .reservation {
+    margin-top: 30vh;
+  }
+  .lunch, .dinner{
+   
+    height: 400vh;
+   
+  }
+  .reservationmy {
+    margin-top: -10vh;
+  }
+  .heroh1{
+    font-size: 35px;
+   
+  }
+  .reservationhero{
+    
+    height: 100vh;
+    
+  }
+ 
+  
+  
+}
+
+
+/* ALL ANIMATIONS */
+
+ /* #top-down{
+   height: 15vh;
+   animation: top-down 0.8s linear 0s 1 forwards;
+  margin-bottom: 10vh;
+}
+
+@keyframes top-down {
+  0%{
+    position: relative;
+    top:1vh;
+  }
+  25%{
+    position: relative;
+    top:4vh;
+  }
+  50%{
+    position: relative;
+    top:8vh;
+  }
+  75%{
+    position: relative;
+    top:11vh;
+  }
+100%{
+    position: relative;
+    top:15vh;
+  }
+ 
+}
+
+#bottom-up{
+  height: 10vh;
+  animation: bottom-up 0.5s linear 0s 1 forwards;
+ margin-top: 19vh;
+}
+@keyframes bottom-up {
+  0%{
+    position: relative;
+    bottom:1vh;
+  }
+  25%{
+    position: relative;
+    bottom:5vh;
+  }
+  75%{
+    position: relative;
+    bottom:8vh;
+  }
+100%{
+    position: relative;
+    bottom:10vh;
+  }
+} */
+/*
+#zoom{
+  animation: zoom 0.5s linear 0s 1 forwards;
+  margin-bottom: 150px;
+}
+@keyframes zoom {
+  0%{
+    width:0;
+    height: 0;
+    padding: 1px;
+  }
+  25%{
+    width:30px;
+    height: 10px;
+    padding: 2px;
+  }
+  50%{
+    width:60px;
+    height: 20px;
+    padding: 3px;
+  }
+  75%{
+    width:90px;
+    height: 30px;
+    padding: 4px;
+  }
+100%{
+  width:120px;
+  height: 40px;
+  padding: 5px;
+  }
+}
+.effect{
+  margin-top: 10px;
+}
+#left-right{
+  height: 20vh;
+  width: 50vw;
+ 
+  animation: left-right 0.5s linear 0s 1 forwards;
+  margin-bottom: -8vh;
+ 
+}
+@keyframes left-right {
+ 0%{
+   position: relative;
+   left:-10vw;
+ }
+ 25%{
+   position: relative;
+   left:-5vw;
+ }
+ 50%{
+  position: relative;
+  left:0vw;
+ }
+ 75%{
+   position: relative;
+   left:5vw;
+ }
+100%{
+   position: relative;
+   left:10vw;
+ }
+
+}
+#right-left{
+  width: 50vw;
+ height: 10vh;
+ animation: right-left 0.5s linear 0s 1 forwards;
+ 
+ margin-bottom: 20px;
+
+}
+@keyframes right-left {
+ 0%{
+   position: relative;
+   right: -50vw;
+  
+ }
+ 25%{
+   position: relative;
+   right: -40vw;
+ }
+ 50%{
+  position: relative;
+  right: -30vw;
+ }
+ 75%{
+   position: relative;
+   right: -20vw;
+ }
+100%{
+   position: relative;
+   right: -10vw;
+ }
+}
+#rotate1{
+ 
+  animation: rotate1 0.5s linear 0s 1 forwards;
+ 
+}
+@keyframes rotate1 {
+ 0%{
+ transform: rotate(90deg);
+ }
+
+100%{
+  transform: rotate(0deg);
+ }
+
+}
+#rotate2{
+ 
+  animation: rotate2 0.5s linear 0s 1 forwards;
+  margin-bottom: 20px;
+ 
+}
+@keyframes rotate2 {
+ 0%{
+ transform: rotate(-90deg);
+ }
+
+100%{
+  transform: rotate(0deg);
+ }
+
+}
+#rotate3{
+  height: 40px;
+  animation: rotate3 0.5s linear 0s 1 forwards;
+ margin-bottom: 150px;
+}
+@keyframes rotate3 {
+ 0%{
+ transform: rotate(0);
+ }
+ 
+100%{
+  transform: rotate(360deg);
+ }
+} */

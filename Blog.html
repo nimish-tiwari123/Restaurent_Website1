@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PATO Restaurant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+ <style>
+  .allh2{
+    letter-spacing: 2px;
+    color: rgb(59, 59, 59);
+  }
+ .p1,.cat{
+  color: rgb(150, 150, 150);
+ }
+ .p2{
+  color: rgb(122, 121, 121);
+  font-size: 18px;
+ }
+ .head{
+  letter-spacing: 1px;
+  color: rgb(75, 75, 75);
+ }
+ 
+ .template{
+ 
+  background-color: rgb(220, 36, 36);
+  z-index: 1;
+ }
+ .img-container{
+  position: relative;
+ }
+ .template{
+  position: absolute;
+  left: 20px;
+  top:75px;
+  
+ }
+ .pr{
+  font-size: 18px;
+  color: rgb(122, 121, 121);
+  transition: 0.7s;
+ }
+ .pr:hover{
+  color: red;
+ }
+ @media only screen and (max-width: 400px) {
+  .template{
+  position: absolute;
+  left: 20px;
+  top:55px;
+  
+}
+ }
+
+ </style>
+</head>
+
+<body>
+
+  <!-- This is first Section -->
+  <header>
+
+    <nav class="navbar fixed-top" id="nav1">
+      <div class="container-fluid pt-3">
+        <a class="navbar-brand" href="#"><img src="home/logo.jpg" alt="" id="brand"></a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-none d-lg-flex justify-content-around flex-row ">
+          <li class="nav-item">
+            <a class="nav-link active text-light ncolor" aria-current="page" id="navM1" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Menu.html" id="navM2">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Reservation.html" id="navM3">RESERVATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Gallery.html" id="navM4">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="About.html" id="navM5">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Blog.html" id="navM6">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Contact.html" id="navM7">CONTACT</a>
+          </li>
+
+
+        </ul>
+        <div class="icon text-light">
+          <i class="fa-brands fa-facebook-f ms-4" id="facebook"></i>
+          <i class="fa-brands fa-twitter ms-3" id="twitter"></i>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon text-bg-light"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body text-center">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Gallery.html">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="About.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Contact.html">CONTACT</a>
+              </li>
+
+
+            </ul>
+            <button class="btn btn-dark mt-4">
+              <a href="Reservation.html" class="text-decoration-none text-white">RESERVATION</a></button>
+
+            <h6 class="mt-4">GALLERY</h6>
+            <div class="container">
+              <div class="row gx-1">
+                <div class="col">
+
+                  <img src="gallery/gone.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gfour.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gseven.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+
+                  <img src="gallery/gtwo.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gfive.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/geight.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+
+                  <img src="gallery/gthree.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gsix.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gnine.jpg" alt="" width="90px" class="gimg">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+     <div class="abouthero text-center">
+      <h1 class="text-white heroh1 fw-bold ">BLOG</h1>
+     </div>
+  </header>
+  <nav aria-label="breadcrumb " class="container-fluid border-bottom">
+    <ol class="breadcrumb mx-5 my-4">
+      <li class="breadcrumb-item "><a href="index.html" class="text-decoration-none text-dark fw-bold">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">BLOG</li>
+    </ol>
+  </nav>
+<div class="blog-body container">
+    <div class="row">
+        <div class="col-lg-9 col-md-8 col-sm-12 border-end mb-5">
+          <div class="contain">
+            <div class="img-container mt-5 me-5 position-relative">
+           <img src="BLOG/first.jpg" alt="" class="img-fluid rounded-4 mt-5 w-100">
+           <div class="template  text-light fw-bold p-2 text-center rounded-4 d-inline-block ">
+            <h1>28</h1>
+            <p>Dec,202</p>
+           </div>
+           </div>
+           <div class="img-content">
+            <h2 class="mt-5 allh2">COOKING RECIPE DELICIOUS</h2>
+            <p class="my-4 p1">by Admin |
+              28 December, 2018 |
+              Cooking, Food |
+              8 Comments</p>
+              <p class=" p2">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+              <button class="btn commonbtn text-secondary p-0 mt-3">CONTINUE READING<i class="fa-solid fa-arrow-right"></i></button>
+           </div>
+          </div>
+          <div class="contain">
+            <div class="img-container mt-5 me-5">
+           <img src="BLOG/second.jpg" alt="" class="img-fluid rounded-4 mt-5 w-100">
+           <div class="template  text-light fw-bold p-2 text-center rounded-4 d-inline-block ">
+            <h1>18</h1>
+            <p>Dec,2022</p>
+           </div>
+           </div>
+           <div class="img-content">
+            <h2 class="mt-5 allh2">COOKING RECIPE DELICIOUS</h2>
+            <p class="my-4 p1">by Admin |
+              28 December, 2018 |
+              Cooking, Food |
+              8 Comments</p>
+              <p class=" p2">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+              <button class="btn commonbtn text-secondary p-0 mt-3">CONTINUE READING<i class="fa-solid fa-arrow-right"></i></button>
+           </div>
+          </div>
+          <div class="contain">
+            <div class="img-container mt-5 me-5">
+           <img src="BLOG/thired.jpg" alt="" class="img-fluid rounded-4 mt-5 w-100">
+           <div class="template  text-light fw-bold p-2 text-center rounded-4 d-inline-block ">
+            <h1>11</h1>
+            <p>Dec,2022</p>
+           </div>
+           </div>
+           <div class="img-content">
+            <h2 class="mt-5 allh2">COOKING RECIPE DELICIOUS</h2>
+            <p class="my-4 p1">by Admin |
+              28 December, 2018 |
+              Cooking, Food |
+              8 Comments</p>
+              <p class=" p2">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+              <button class="btn commonbtn text-secondary p-0 mt-3">CONTINUE READING<i class="fa-solid fa-arrow-right"></i></button>
+           </div>
+          </div>
+          <div class="contain">
+            <div class="img-container mt-5 me-5">
+           <img src="BLOG/fourth.jpg" alt="" class="img-fluid rounded-4 mt-5 w-100">
+           <div class="template  text-light fw-bold p-2 text-center rounded-4 d-inline-block ">
+            <h1>22</h1>
+            <p>JUL,2022</p>
+           </div>
+           </div>
+           <div class="img-content">
+            <h2 class="mt-5 allh2">COOKING RECIPE DELICIOUS</h2>
+            <p class="my-4 p1">by Admin |
+              28 December, 2018 |
+              Cooking, Food |
+              8 Comments</p>
+              <p class=" p2">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+              <button class="btn commonbtn text-secondary p-0 mt-3">CONTINUE READING<i class="fa-solid fa-arrow-right"></i></button>
+           </div>
+          </div>
+          <div class="contain mb-5">
+            <div class="img-container mt-5 me-5">
+           <img src="BLOG/fifth.jpg" alt="" class="img-fluid rounded-4 mt-5 w-100">
+           <div class="template  text-light fw-bold p-2 text-center rounded-4 d-inline-block ">
+            <h1>30</h1>
+            <p>Dec,2022</p>
+           </div>
+           </div>
+           <div class="img-content">
+            <h2 class="mt-5 allh2">COOKING RECIPE DELICIOUS</h2>
+            <p class="my-4 p1">by Admin |
+              28 December, 2018 |
+              Cooking, Food |
+              8 Comments</p>
+              <p class=" p2">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius</p>
+              <button class="btn commonbtn text-secondary p-0 mt-3">CONTINUE READING<i class="fa-solid fa-arrow-right"></i></button>
+           </div>
+          </div>
+          <nav aria-label="Page navigation example ">
+            <ul class="pagination my-5">
+             
+              <li class="page-item mx-2"><a class="page-link bg-dark text-light fw-bold  rounded-circle" href="#">1</a></li>
+              <li class="page-item mx-2"><a class="page-link fw-bold  bg-secondary-subtle text-dark rounded-circle" href="#">2</a></li>
+              
+            </ul>
+          </nav>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+         
+            
+              <div class="ms-lg-4 ms-md-3 my-5 container">
+                <form class="d-flex" role="search">
+                  <input class="form-control fs-5 p-3 rounded-0" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn bg-dark text-light p-3 rounded-0" type="submit"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+                </form>
+             
+              </div>
+
+            <div class="container ms-lg-4 ms-md-3">
+             <h3 class="allh2 mb-5">CATEGORIES</h3>
+             <hr>
+             <p class="cat">COOKING RECIPE</p>
+             <hr>
+             <p class="cat">DELICIOUS FOODS</p>
+             <hr>
+             <p class="cat">EVENTS DESIGN</p>
+             <hr>
+             <p class="cat">RESTAURANT PLACE</p>
+             <hr>
+             <p class="cat">WORDPRESS</p>
+             <hr>
+            </div>
+            <div class="container ms-lg-4 ms-md-3">
+              <h3 class="allh2 my-5">MOST POPULAR</h3>
+                <div class="row">
+                 
+                   <div class="col-5">
+                      <img src="BLOG/mini1.jpg" alt="" class="img-fluid rounded-4">
+                    </div>
+                      <div class="col-7">
+                         <h6 class="head">BEST PLACES FOR WINE</h6>
+                         <p class="p1">3 days ago</p>
+                      </div>
+                  
+                  
+                </div>
+                <div class="row mt-3 ">
+                 
+                  <div class="col-5">
+                     <img src="BLOG/mini2.jpg" alt="" class="img-fluid rounded-4">
+                   </div>
+                     <div class="col-7">
+                        <h6 class="head">EGGS AND CHEESE</h6>
+                        <p class="p1">July 2, 2017</p>
+                     </div>
+                 
+                 
+               </div>
+               <div class="row mt-3 ">
+                 
+                <div class="col-5">
+                   <img src="BLOG/mini3.jpg" alt="" class="img-fluid rounded-4">
+                 </div>
+                   <div class="col-7">
+                      <h6 class="head">STYLE THE WEDDING PARTY</h6>
+                      <p class="p1">May 28, 2017</p>
+                   </div>
+               
+               
+             </div>
+             <div class="row mt-3 ">
+                 
+              <div class="col-5">
+                 <img src="BLOG/mini4.jpg" alt="" class="img-fluid rounded-4">
+               </div>
+                 <div class="col-7">
+                    <h6 class="head">COOKING RECIPE DELICIOUS</h6>
+                    <p class="p1">May 25, 2017</p>
+                 </div>
+             
+             
+           </div>
+           <div class="row mt-3 mb-5">
+                 
+            <div class="col-5">
+               <img src="BLOG/mini5.jpg" alt="" class="img-fluid rounded-4">
+             </div>
+               <div class="col-7">
+                  <h6 class="head">PIZZA IS PREPARED FRESH</h6>
+                  <p class="p1">May 2, 2017</p>
+               </div>
+           
+           
+         </div>
+             </div>
+             <div class="container ms-lg-4 ms-md-3">
+              <h3 class="allh2 mb-5">ARCHIVE</h3>
+            
+              <pre class=" pr">ULY 2018E               (9)</pre>
+              <pre class=" pr">JUNE 2018              (39)</pre>
+              <pre class=" pr">MAY 2018               (29)</pre>
+              <pre class=" pr">APRIL 2018             (35)</pre>
+              <pre class=" pr">MARCH 2018             (22)</pre>
+              <pre class=" pr">FEBRUARY 2018          (32)</pre>
+              <pre class=" pr">JANUARY 2018           (21)</pre>
+              <pre class=" pr">DECEMBER 2017          (26)</pre>
+             
+             </div>
+        </div>
+        
+    </div>
+</div>
+ 
+  <footer>
+    <div class="container-fluid bg-dark foot p-5">
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="contact">
+              <h4 class="text-white mb-3 ">CONTACT US</h4>
+              <p><i class="fa-solid fa-location-dot"></i> 8th floor, 379 Hudson St, New York, NY 10018</p>
+              <p><i class="fa-solid fa-phone"></i> (+1) 96 716 6879</p>
+              <p><i class="fa-solid fa-envelope"></i> contact@site.com</p>
+            </div>
+            <div class="opening-times">
+              <h4 class="text-white mt-5 mb-3 ">OPENING TIMES</h4>
+              <p>09:30 AM – 11:00 PM</p>
+              <p>Every Day</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <h4 class="text-white mb-3 ">LATEST TWITTER</h4>
+            <i class="fa-brands fa-twitter text-light"></i><span class="text-danger"> @Nimish</span>
+            <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.
+              <span class="text-danger">https://www.patoresto.com</span>
+            </p>
+            <br>
+            <i class="fa-brands fa-twitter text-light"></i><span class="text-danger"> @Nimish</span>
+            <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.
+              <span class="text-danger">https://www.patoresto.com</span>
+            </p>
+
+          </div>
+          <div class="col-lg-4 col-md-8 col-sm-12">
+            <h4 class="text-white mb-5 ms-2">GALLERY</h4>
+            <div class="container mb-5">
+              <div class="row gx-1">
+                <div class="col">
+
+                  <img src="gallery/gone.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gfour.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gseven.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gsix.jpg" alt="" width="90px" class="gimg">
+                </div>
+
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+                  <img src="gallery/gfour.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gtwo.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gfive.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/geight.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+
+                  <img src="gallery/gthree.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gsix.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gnine.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+                  <img src="gallery/gseven.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="color.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

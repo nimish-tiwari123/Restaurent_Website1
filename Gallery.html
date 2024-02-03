@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PATO Restaurant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    img:hover{
+        box-shadow: 1px 10px 10px rgb(151, 150, 150);
+    }
+    .pagination{
+        width: 100vw;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- This is first Section -->
+  <header>
+
+    <nav class="navbar fixed-top" id="nav1">
+      <div class="container-fluid pt-3">
+        <a class="navbar-brand" href="#"><img src="home/logo.jpg" alt="" id="brand"></a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-sm-none d-lg-flex justify-content-around flex-row ">
+          <li class="nav-item">
+            <a class="nav-link active text-light ncolor" aria-current="page" id="navM1" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Menu.html" id="navM2">MENU</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Reservation.html" id="navM3">RESERVATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Gallery.html" id="navM4">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="About.html" id="navM5">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Blog.html" id="navM6">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Contact.html" id="navM7">CONTACT</a>
+          </li>
+
+
+        </ul>
+        <div class="icon text-light">
+          <i class="fa-brands fa-facebook-f ms-4" id="facebook"></i>
+          <i class="fa-brands fa-twitter ms-3" id="twitter"></i>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon text-bg-light"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body text-center">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Gallery.html">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="About.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Blog.html">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Contact.html">CONTACT</a>
+              </li>
+
+
+            </ul>
+            <button class="btn btn-dark mt-4">
+              <a href="Reservation.html" class="text-decoration-none text-white">RESERVATION</a></button>
+
+            <h6 class="mt-4">GALLERY</h6>
+            <div class="container">
+              <div class="row gx-1">
+                <div class="col">
+
+                  <img src="gallery/gone.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gfour.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gseven.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+
+                  <img src="gallery/gtwo.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gfive.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/geight.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+
+                  <img src="gallery/gthree.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gsix.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gnine.jpg" alt="" width="90px" class="gimg">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+     <div class="reservationhero text-center">
+      <h1 class="text-white heroh1 fw-bold ">GALLERY</h1>
+     </div>
+  </header>
+    
+  <div class="gallery p-5 ">
+    <div class="container  m-lg-5 m-md-5 m-sm-0">
+        <div class="row w-75 m-auto g-3">
+            <div class="col-lg-2  col-md-2 col-sm-12 bg-dark text-light text-center rounded-4 p-2 fw-bold gbtn ">ALL PHOTOS</div>
+            <div class="col-lg-2 col-md-2 col-sm-12 bg-secondary-subtle text-dark text-center rounded-4 p-2 fw-bold ms-md-3 gbtn ">INTERIOR</div>
+            <div class="col-lg-2 col-md-2 col-sm-12 bg-secondary-subtle text-dark text-center rounded-4 p-2 fw-bold ms-md-3 gbtn ">FOOD</div>
+            <div class="col-lg-2 col-md-2 col-sm-12 bg-secondary-subtle text-dark text-center rounded-4 p-2 fw-bold ms-md-3 gbtn ">EVENTS</div>
+            <div class="col-lg-2 col-md-2 col-sm-12 bg-secondary-subtle text-dark text-center rounded-4 p-2 fw-bold ms-md-3 gbtn ">VIP GUESTS</div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="card">
+            
+            <img src="gallery/gA1.jpg" class="card-img rounded-4" alt="..." >
+           
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="gallery/gA2.jpg" class="card-img rounded-4" alt="..." >
+             
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="gallery/gA3.jpg" class="card-img rounded-4" alt="..." >
+             
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="gallery/gA4.jpg" class="card-img rounded-4" alt="..." >
+             
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="gallery/gA5.jpg" class="card-img rounded-4" alt="..." >
+             
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="gallery/gA6.jpg" class="card-img rounded-4" alt="..." >
+             
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="gallery/gA7.jpg" class="card-img rounded-4" alt="..." >
+             
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="gallery/gA8.jpg" class="card-img rounded-4" alt="..." >
+             
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="gallery/gA9.jpg" class="card-img rounded-4" alt="..." >
+             
+            </div>
+          </div>
+      </div>
+      
+  </div>
+  <nav aria-label="Page navigation example ">
+    <ul class="pagination justify-content-center my-5">
+     
+      <li class="page-item mx-2"><a class="page-link bg-dark text-light fw-bold  rounded-circle" href="#">1</a></li>
+      <li class="page-item mx-2"><a class="page-link fw-bold  bg-secondary-subtle text-dark rounded-circle" href="#">2</a></li>
+      <li class="page-item mx-2"><a class="page-link fw-bold bg-secondary-subtle text-dark rounded-circle" href="#">3</a></li>
+      
+    </ul>
+  </nav>
+  <div class="newsletter container-fluid p-5">
+
+    <form class="row p-lg-5">
+      <div class="col-md-4 col-sm-12 text-center">
+        <span class="fs-3 px-lg-3">SPECIALS SIGN UP</span>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <label for="inputemail2 ">
+          <input type="email" class="form-control" id="inputemail2" placeholder="Email Address">
+
+        </label>
+      </div>
+      <div class="col-md-4 col-sm-12 text-center">
+        <button type="submit" class="btn btn-dark px-lg-5 mb-3">SIGN-UP</button>
+      </div>
+    </form>
+
+  </div>
+  <footer>
+    <div class="container-fluid bg-dark foot p-5">
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="contact">
+              <h4 class="text-white mb-3 ">CONTACT US</h4>
+              <p><i class="fa-solid fa-location-dot"></i> 8th floor, 379 Hudson St, New York, NY 10018</p>
+              <p><i class="fa-solid fa-phone"></i> (+1) 96 716 6879</p>
+              <p><i class="fa-solid fa-envelope"></i> contact@site.com</p>
+            </div>
+            <div class="opening-times">
+              <h4 class="text-white mt-5 mb-3 ">OPENING TIMES</h4>
+              <p>09:30 AM – 11:00 PM</p>
+              <p>Every Day</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <h4 class="text-white mb-3 ">LATEST TWITTER</h4>
+            <i class="fa-brands fa-twitter text-light"></i><span class="text-danger"> @Nimish</span>
+            <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.
+              <span class="text-danger">https://www.patoresto.com</span>
+            </p>
+            <br>
+            <i class="fa-brands fa-twitter text-light"></i><span class="text-danger"> @Nimish</span>
+            <p>Activello is a good option. It has a slider built into that displays the featured image in the slider.
+              <span class="text-danger">https://www.patoresto.com</span>
+            </p>
+
+          </div>
+          <div class="col-lg-4 col-md-8 col-sm-12">
+            <h4 class="text-white mb-5 ms-2">GALLERY</h4>
+            <div class="container mb-5">
+              <div class="row gx-1">
+                <div class="col">
+
+                  <img src="gallery/gone.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gfour.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+                  <img src="gallery/gseven.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gsix.jpg" alt="" width="90px" class="gimg">
+                </div>
+
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+                  <img src="gallery/gfour.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gtwo.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gfive.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+                <div class="col">
+
+                  <img src="gallery/geight.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+              <div class="row mt-2 gx-1">
+                <div class="col">
+
+                  <img src="gallery/gthree.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gsix.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+
+                  <img src="gallery/gnine.jpg" alt="" width="90px" class="gimg">
+                </div>
+                <div class="col">
+                  <img src="gallery/gseven.jpg" alt="" width="90px" class="gimg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="color.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
